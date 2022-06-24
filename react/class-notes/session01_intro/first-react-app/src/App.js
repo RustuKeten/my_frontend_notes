@@ -1,9 +1,9 @@
-import logo from "./logo.svg";
-import "./App.css";
+//** component: uygulamayı esas çalıştıran  */
 
 function App() {
   return (
-    <div className="App">
+    //jsx
+    <div>
       <h1>Merhaba React</h1>
     </div>
   );
