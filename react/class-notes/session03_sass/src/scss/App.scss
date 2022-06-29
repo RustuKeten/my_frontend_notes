@@ -1,0 +1,9 @@
+@import "./reset", "./variables";
+
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: aliceblue;
+}
+
+//*yukarda yazdığımız reset ve variables dosyarını global olarak bağlıyoruz
+//* body gibi temel ayarları da yapabiliriz

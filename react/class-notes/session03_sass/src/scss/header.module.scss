@@ -1,0 +1,11 @@
+@import './variables';
+//* renkleri almak için variable import ediyoruz
+
+header {
+  background-color: $pink;
+  padding: 3rem;
+  .title {
+    text-align: center;
+    color: azure;
+  }
+}
