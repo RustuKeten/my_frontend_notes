@@ -1,0 +1,26 @@
+
+.container{
+    display: flex;
+    width: 100%;
+    margin-top: 200px;
+
+}
+
+.left{
+    background-color: rgb(185, 180, 180) ;
+    width: 33%;
+    height:2rem ;
+}
+.right{
+    background-color: rgb(126, 218, 221) ;
+    width: 33%;
+    height:2rem ;
+}
+.menu{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    background-color: blueviolet;
+    width: 33%;
+    height:2rem ;
+}

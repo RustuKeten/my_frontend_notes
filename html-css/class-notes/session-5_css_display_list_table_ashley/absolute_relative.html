@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: brown;
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+            position: static;
+            }
+        .box1{
+            background-color: darkcyan;
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+            position: relative;/*kendi sol köşesini 0-0 alıyor*/
+            top: 20px;
+            left: 50px;
+            
+        }
+        .box2{
+            background-color: chocolate;
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+            position: absolute; /* soldan ve yukardan 0'a göre konum alır*/
+            top: 20px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="box">box1</div>
+        <div class="box1">box2</div>
+        <div class="box2">box3</div>
+    </div>
+</body>
+</html>

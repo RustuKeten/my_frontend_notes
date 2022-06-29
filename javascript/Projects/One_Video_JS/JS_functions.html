@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 Videoda Javascript</title>
+    <style>
+        .header {
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 18px;
+            background: red;
+
+        }
+        .container {
+            text-align: center;
+            font-size: 30px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        
+        <h1>1 Videoda Javascript Conditions</h1>
+
+    </div>
+
+    <hr>
+    <div class="container">
+
+    </div>
+    <script>
+
+        function selamla(){  //  fonksiyon tanımladık.
+            console.log("Merhaba, Nasılsın?");
+
+        }
+
+        selamla();  //  tanımlanan fonksiyonu çağırdık.
+        selamla();
+        selamla();  //  tekrar ber tekrar çağrılabilir.
+
+
+        function esselam(isim){  //  JS de dinamik değişkenler kullanımı olduğu için tekrar var isim; yazmak gerekmedi.
+            console.log("Merhaba " + isim);
+
+        }
+
+        esselam("Murat");
+        esselam("Ayşe");
+
+        function topluyoruz(a,b,c){
+            console.log("Topluyoruz : " + (a+b+c));
+
+        }
+        topluyoruz(3,4,5);
+
+        function toplama(a,b,c){
+            return a + b + c;
+
+        }
+
+        var toplam = toplama(3,4,5);
+
+        console.log("Toplam sonuç : " + toplam);
+
+    </script>
+
+
+
+
+</body>
+</html>

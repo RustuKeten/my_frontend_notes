@@ -1,0 +1,12 @@
+Örnek <header>: Sitenin en üst kısmını içine alır.
+<nav>: Menüler içindir.
+<section>: Genel bölümleme öğesidir.
+<article>: Makale, deneme tarzı yazıları kapsar.
+<aside>: Ana içerikten ayrı yazılan kısımdır.
+<figure>: Çeşitli medya içeriği gruplarını belirler.
+<figcaption>: <figure> elementinin başlığını belirler.
+<footer>: Sitelerin en alt kısmını içine alır.
+<details>: Detay bilgisi içerir.
+<summary>: Detay bilgisi başlığını içerir.
+<mark>: Yazı içerisinde özellikle üstünde durulan kelimeleri belirler.
+<time>: Tarih, saat verilerini kapsar.

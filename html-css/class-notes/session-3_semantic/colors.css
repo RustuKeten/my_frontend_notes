@@ -1,0 +1,27 @@
+names: supports 140 standart color names(red, orange, blue, yellow, gray)
+rgb (red, green, blue) 0-255 (0, 0, 255 is defined blue)
+hex #0000ff is blue, #00ff00 is green, #000000 is black, # ffffff is white
+hsl 
+    hue:Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.
+    Saturation(doygunluk) can be described as the intensity of a color. It is a percentage value, 0% means a shade of gray, and 100% is the full color.
+    Lightness(parlaklık) is also a percentage, 0% is black, 50% is neither light or dark, 100% is white
+
+rgba: rgb with aplha it means opacity: saydam olmayış 0(fully transparent) and 1(not transparent)
+hsla values : hsl with alpha (opacity)
+
+borders: The border-style property can have from one to four values 
+(top border, right border, bottom border, and left border).
+    dotted noktalı
+    dashed kesik çizgi 
+    solid yekpare
+    double çift
+    groove oluk, yivli
+    ridge kabarık çizgi, çıkıntı
+    inset içe doğru girinti
+    outset dışa doğru çıkıntı
+    none yok
+    hidden gizli
+
+
+
+    margin bir elementin kenar paylarına denir. top-right-bottom-left olarak alınır, px,rem, em, cm değerleri ile alınır.

@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-sizing</title>
+
+    <style>
+        #content-box {
+            background-color: darkorange;
+            border: 5px solid red;
+            height: 50px;
+            padding: 20px;
+            /* box-sizing: content-box; */
+        }
+
+        #border-box{
+            background-color: crimson;
+            border: 50px solid blue;
+            height: 50;
+            padding: 20px;
+            box-sizing: content-box;
+        }
+        span{
+            background-color: red;
+            /*inline elemanlara right left padding verebiliriz, dikey de vermemeliyiz*/
+            padding: 0 50px;
+        }
+        h2{
+            margin-top: -40px;
+        }
+        
+    </style>
+</head>
+<body>
+  <h1>Content Box</h1>  
+  <img src="./planets-solar-system-infographic_1308-51879.jpg" alt="">
+  <p id="content-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptate molestiae temporibus eligendi veritatis est. Quidem minus repellendus non possimus. Eum iure alias illum doloremque error incidunt ipsam maiores doloribus.</p>
+  <span>merhaba naber cohort-11</span>
+<h1>BORDER-BOX</h1>
+<img src="./Put-the-Planets-in-Order-Classroom-Activity-Featured-Image-768x274.jpg" alt="">
+<h2>resmin üstünde</h2>
+<p id="border-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptate molestiae temporibus eligendi veritatis est. Quidem minus repellendus non possimus. Eum iure alias illum doloremque error incidunt ipsam maiores doloribus.</p>
+</body>
+</html>

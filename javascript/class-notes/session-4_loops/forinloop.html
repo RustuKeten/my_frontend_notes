@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+  
+<body>
+    <p id="demo"></p>
+    <script>
+        var person = {
+            firstName: "GeeksforGeeks",
+            lastName: "<br>A Computer Science Portal for Geeks ",
+            rank: 43
+        };
+        var userId = "";
+        var i;
+        for (i in person) {
+            userId += person[i];
+        }
+        document.getElementById("demo").innerHTML = userId;
+    </script>
+</body>
+  
+</html>

@@ -1,0 +1,61 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    color: red;
+}
+nav.navbar{
+    background-color: grey;
+    width: 150px;
+}
+nav.navbar .list{
+    list-style-type: '😀';
+    /* list-style-type: none; */
+    padding: 0;
+    list-style-position: inside;
+}
+nav.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+/* nav.navbar .list .aktif{
+    background-color: black;
+} */
+nav.navbar .list li:first-child, li:last-child{
+    background-color: black;
+}
+nav.navbar .list li:nth-child(even){
+    background-color: purple;
+}
+nav.navbar ul li:hover a{
+    color: yellow;  
+}
+nav.navbar ul li:hover{
+    background-color: red;
+}
+nav.navbar .list .aktif:hover{
+    background-color: red;
+}
+nav.navbar ul li:last-child::after{
+    content: '👨‍👦‍👦';
+}
+nav.navbar ul li:first-child::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: black;
+    content: '\3a';
+}
+.kutu p{
+    color: green;
+}
+.kutu>p{
+    color: purple;
+}
+/*todo h2 elementinden sonra gelen ilk p'yi seçer*/
+h2 + p{
+    background-color: pink;
+}
+/*? h2 elenemtinden sonraki tüm p'leri seçer*/
+h2 ~ p{
+    background-color: pink;
+}

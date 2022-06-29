@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 Videoda Javascript</title>
+    <style>
+        .header {
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 18px;
+            background: red;
+
+        }
+        .container {
+            text-align: center;
+            font-size: 30px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        
+        <h1>1 Videoda Javascript Object Based Programming</h1>
+
+    </div>
+
+    <hr>
+    <div class="container">
+
+    </div>
+    <script>
+
+        // var x = 10  //variable tanımladık
+        // var calisan = {                   // variable ile yani bilgilerini girerek obje tanımladık
+        //     isim: "Mustafa Murat",
+        //     soyisim: "Coskun",
+        //     numara: 123456,
+        //     diller: ["Php", "Java", "C++"],
+        //     adres: {
+        //         cadde: "Kabil",
+        //         sokak: "1254.sokak"
+
+        //     },
+        //     isimBilgileri: function(){
+        //         return "Çalışan ismi: "+ this.isim + " Soyisim: " + this.soyisim;
+
+        //     }
+
+        // };
+        // console.log(calisan.isim);
+        // console.log(calisan.numara);
+        // console.log(calisan.diller);
+        // console.log(calisan.adres.cadde);
+        // console.log(calisan.adres.sokak);
+        // console.log(calisan.isimBilgileri());
+
+        // var isci = new Object();      //  bu şekilde içi boş obje tanımlayıp sonra kendimiz doldurabiliriz.
+        // isci.isim = "Ahmet";
+        // isci.soyisim = "Coskun";
+        // isci.isimBilgileri = function(){
+        //     return "İsim Bilgileri: " + this.isim+ " "+ this.soyisim;
+
+        // };
+
+        // console.log(isci.isim);
+        // console.log(isci.soyisim);
+        // console.log(isci.isimBilgileri());
+
+
+        function Emekci(isim, soyisim, numara){
+            this.isim = isim;
+            this.soyisim = soyisim;
+            this.numara = numara;
+            this.bilgileriGoster = function(){
+                return "İsim: " + this.isim + "\nSoyisim : " + this.soyisim + "\nNumara : " + this.numara;
+
+            }
+        }
+
+        var emekci1 = new Emekci("Servet", "Coskun", 456789);
+        var emekci2 = new Emekci("Sabri", "Tura", 147258);
+        console.log(emekci1.bilgileriGoster());
+        console.log(emekci2.bilgileriGoster());
+
+        
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>

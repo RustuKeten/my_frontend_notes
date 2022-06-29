@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./colorworks.css">
+    <title>Form</title> 
+    <!-- it is used to collect info from user (like inputs) -->
+    <style>
+        #seker {
+            background-color: yellow;
+            border: 3px solid blue;
+            width: 50;
+        }
+    </style>
+</head>
+<body id="body">
+
+    <form action="result.html" method="get">
+        <!-- action is used to point to a webpage that is loaded after a form submission -->
+        <h2>Welcome Rustu's Way</h2>
+        <div>
+            <label for="name">isim</label>
+            <input id="name" type="text" name="isim" placeholder="adınızı giriniz...">
+            
+            <!-- text input element used for create a singleline text input -->
+            <!-- name attribute is omitted -->
+            <!-- method attribute: determine how to send send form to server -->
+                <!-- default is GET attention: value is visible so sensitive data will shown. -->
+                <!-- second one is POST we have to use it for long and sensitive data  -->
+        
+                <!-- value is define what we write on the button -->
+            <br>
+            <label for="lastname">soyisim</label>
+            <input id="lastname" type="text" name="soyisim" placeholder="soyisiminiz..." required>
+           <!-- required doldrumadan geçemyi,niz mesajı geliyor -->
+        </div>
+        <a href="">
+            <tittle></tittle>
+        </a>
+
+        <div>
+            <label for="sifre">Parola:</label>
+            <input type="password" name="parola" id="sifre">
+        </div>
+        <div>
+            <label>Cinsiyet</label>
+            <br>
+            <label for="gender">Erkek</label>
+            <input type="radio" name="Cinsiyet" id="gender" value="Erkek">
+            <label for="gender">Kadın</label>
+            <input type="radio" name="Cinsiyet" id="gender" value="Kadın" checked>
+        </div>
+
+        <div>
+            <p>Favori hayvan dostunuzu seçin:</p>
+
+            <input type="checkbox" name="animal_1" id="panda" value="Panda">
+            <label for="panda">Panda</label>
+
+            <input type="checkbox" name="animal_2" id="balık" value="Balık">
+            <label for="balık">Balık</label>
+            <input type="checkbox" name="animal_3" id="kedi" value="Kedi">
+            <label for="kedi">Kedi</label>
+            
+            
+        </div>
+
+        <div>
+            <label for="age">yaş:</label>
+            <input type="number" name="girilen yaş" id="age" step="5">
+        </div>
+
+            <div>
+                <label for="search">Search</label>
+                <input type="search" name="arandı" id="search" 
+                placeholder="arama...">
+            </div>
+
+            <div>
+                <label for="color">Renk Seçin:</label>
+                <input type="color" name="seçilen renk" id="color">
+            </div>
+
+            <div>
+                <label for="file">Dosya Seç</label>
+                <input type="file" name="Seçilen Dosya" id="file">
+            </div>
+
+            <div>
+                <label for="date">Tarih</label>
+                <input type="date" name="Seçilen Tarih" id="date" min="2021-01-01" max="2022-12-12" value="19.04.2022">
+                
+            </div>
+
+            <div>
+                <label for="email">e_mail giriniz</label>
+                <input type="email" name="girilen_email" id="email">
+            </div>
+
+            <div>
+                <label for="cell_number">Telefon_Numarası:</label>
+                <input type="tel" name="tel_no" id="cell_number">
+            </div>
+            <hr>
+            <div>
+                <label for="seker">Hangi tatlıyı seversiniz</label>
+                <br>
+                <select name="seçilen tatlılar" id="seker" size="2" multiple>
+                    <option value="Sütlaç">Sütlaç</option>
+                    <option value="Keşkül">Keşkül</option>
+                    <option value="Aşure">Aşure</option >
+                    <option value="Süpangle">Süpangle</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="seker2">Hangi tatlıyı seversiniz</label>
+                <select name="tatlılar" id="seker2" >
+                    <optgroup label="Sütlü Tatlılar">
+                        <option value="Sütlaç">Sütlaç</option>
+                        <option value="Keşkül">Keşkül</option>
+                        <option value="Aşure">Aşure</option>
+                        <option value="Süpangle">Süpangle</option>
+                    </optgroup>
+
+                    <optgroup label="Şerbetli Tatlılar">
+                        <option value="Baklava">Baklava</option>
+                        <option value="tulumba">tulumba</option>
+                        <option value="künefe">künefe</option>
+                        <option value="katmer">katmer</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div>
+
+                <label for="yorum">Yorum</label>
+                <br>
+                <textarea name="girilen yorum" id="yorum" style="resize: none; width: 75;" placeholder="lütfen yorumunuzu yazınız"></textarea>
+            </div>
+
+            <div>
+                <label for="input-browser">Browser</label>
+                <input type="text" name="Kullanılan Browser" id="input-browser" list="browser">
+                <datalist id="browser">
+                    <option value="Safari"></option>
+                    <option value="Chrome"></option>
+                    <option value="Firefox"></option>
+                    <option value="Brave"></option>
+                </datalist>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Kişisel Bilgiler</legend>
+                    <br>
+                    <label for="fname">Ad:</label>
+                    <br>
+                    <input type="text" name="girilenler_" id="fname" placeholder="adınız...">
+                    <br>
+                    <label for="sname">Ad:</label>
+                    <br>
+                    <input type="text" name="girilenler_" id="sname" placeholder="soyadınız...">
+                  
+                </fieldset>
+            </div>
+           
+
+
+
+       <br>
+       <input type="submit" value="Send">
+       <input type="reset" value="Sıfırla">
+
+    </form>
+    
+</body>
+</html>

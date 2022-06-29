@@ -1,0 +1,16 @@
+// div ul li a{
+//     color: yellowgreen;
+// }
+@import"_body";
+div {
+  background-color: yellow;
+
+  ul {
+    li {
+      list-style-type: none;
+      a {
+        color: purple;
+      }
+    }
+  }
+}

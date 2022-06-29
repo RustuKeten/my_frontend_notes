@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 Videoda Javascript</title>
+    <style>
+        .header {
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 18px;
+            background: red;
+
+        }
+        .container {
+            text-align: center;
+            font-size: 30px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        
+        <h1>1 Videoda Javascript innerHTML Events</h1>
+
+    </div>
+
+    <hr>
+    <div class="container">
+        <button onclick="tikla()">Tıkla</button>  <!--onclick JS kodu HTML attribute kısmında kullanıldı-->
+
+    </div>
+    <hr>
+    <div class="container">
+        <button onclick="this.innerHTML = 'Butona Tıklandı..' ">Tıkla</button>  <!--onclick JS kodu HTML attribute kısmında kullanıldı-->
+
+    </div>
+    <hr>
+    <div class="container">
+        <button onclick="tiklasana(this)">Tıkla</button>  <!--onclick JS kodu HTML attribute kısmında kullanıldı-->
+
+    </div>
+    <div class="container">
+        <p id="paragraf1">Paragraf 1</p>
+        <button onclick="renkDegisti()">Tıkla</button>  <!--onclick JS kodu HTML attribute kısmında kullanıldı-->
+
+    </div>
+    <div class="container">
+        <p id="paragraf2">Paragraf 2</p>
+        <button onmouseover="mouseover()" onmouseout="mouseout()">Tıkla</button>  <!--onclick JS kodu HTML attribute kısmında kullanıldı-->
+
+    </div>
+    <script>
+        // function tikla(){                  // this.innerHTML attribute'e bu satırdaki 
+        //     alert("Butona tıklandı...")   //  tikla() fonksiyonu yazılırsa bizi ikaz penceresiyle bilgilendirir.
+        // }
+
+        // function tiklasana(element){
+        //     element.innerHTML = "Tıkılandın dostum sakin ol.";
+
+        // }
+
+        // function renkDegisti(){
+        //     var element = document.getElementById("paragraf1");
+        //     element.style.color = "red";
+
+        // }
+
+        // function mouseover(){
+        //     var element = document.getElementById("paragraf2");
+        //     element.innerHTML = "Mouse Over Effecti";
+            
+        // }
+        // function mouseout(){
+        //     var element = document.getElementById("paragraf2");
+        //     element.innerHTML = "Mouse Out Effecti";
+
+        // }
+
+
+
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>

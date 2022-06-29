@@ -1,0 +1,18 @@
+.paragraf2{
+    color: yellow;
+}
+
+#foater{
+    text-align: center;
+    font-size: 25px;
+    border: 1 px solid white;
+    background-color: gray;
+    width: 200px;
+    height: 300px;
+}
+.main{
+    text-align: center;
+    height: 65px;
+    color: white;
+    background-color: darkslategray;
+}

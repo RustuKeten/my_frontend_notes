@@ -1,0 +1,32 @@
+header.banner{
+    background-image: url('./tree.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.bg{
+    color: white;
+    text-align: center;
+    font-size: 20;
+}
+.button{
+    background-color: grey;
+    width: 9rem;
+    height: 1rem;
+    float: left;
+    position: relative;
+    top: 450;
+    left: 400;
+    
+    
+}
+.button1{
+    margin: 1rem;
+    background-color: rgb(189, 67, 22);
+}
+.button2{
+    margin: 1rem;
+}
+.button3{
+    margin: 1rem;
+}

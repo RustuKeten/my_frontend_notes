@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.container{
+  display: grid;
+  grid-template-columns: 150px 50vw 150px;
+  grid-template-rows: 100px 500px 20vh 3rem;
+  justify-content: center;
+}
+.content{
+  background-color: lightcyan;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+}
+.content1{
+  background-image: url(https://cdn.pixabay.com/photo/2022/05/10/11/12/tree-7186835__480.jpg);
+  background-size: cover;
+}

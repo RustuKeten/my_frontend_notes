@@ -1,0 +1,143 @@
+/* email :          <i class="fa-solid fa-envelope"></i>
+phone:         <i class="fa-solid fa-phone"></i>
+user:            <i class="fa-solid fa-user"></i>
+adress:        <i class="fa-solid fa-house"></i>
+city:             <i class="fa-regular fa-city"></i>
+Postal C.:    <i class="fa-solid fa-envelopes-bulk"></i>
+country:     <i class="fa-solid fa-earth-europe"></i> */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+*{
+    font-family: "Montserrat";
+    font-weight:400 ;
+    margin: 0;
+    padding: 0;
+}
+section {
+    width: 26rem;
+    /* opacity: 0.6; */
+}
+.mail{
+    width: 90%;
+    padding: 6px;
+    border: solid 1px grey;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+section form h2 {
+    padding: 6px;
+}
+.mail input{
+    width: 90%;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+}
+label{
+    display: inline-block;
+    padding: 6px;
+}
+.subtotal{
+    margin-top: 3rem;
+}
+.country-post{
+    display: flex;
+}
+.country-post label{
+    display: block;
+}
+.country select{
+    height: 2rem;
+    display: inline-block;
+    width: 7rem;
+    border-radius: 5px;
+    text-align: center;
+}
+.country{
+    margin-right: 10px;
+}
+.country i{
+    position: relative;
+    left: -7rem;
+}
+.post{
+    width: 62%;
+}
+.checkbox{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+.checkbox label{
+    margin-left: 1rem
+}
+.submit{
+    display: flex;
+    justify-content: end;
+    margin-right: 2rem;
+}
+.submit input{
+  
+    width: 7rem;
+    height: 3rem;
+    border: none;
+    color: white;
+    background-color: darkorange;
+    border-radius: 0.5rem;
+}
+i,label{
+    color:#828282
+}
+.checkbox{
+    font-size: 13px;
+}
+.main_section{
+    display: flex;
+}
+.bölüm-1{
+    display: flex;
+}
+.bölüm-2{
+    display: flex;
+}
+.pay{
+    
+}
+.subtotal{
+    border-top: 1px solid rgb(184, 181, 181);
+    display: flex;
+    justify-content: space-between;
+}
+.tax{
+    border-top: 1px solid rgb(184, 181, 181);
+    display: flex;
+    justify-content: space-between;
+}
+.shipping{
+   border-top: 1px solid rgb(184, 181, 181);
+    display: flex;
+    justify-content: space-between;
+}
+.total{
+    border-top: 1px solid rgb(184, 181, 181);
+    display: flex;
+    justify-content: space-between;
+}
+.productTotal{
+    display: flex;
+}
+.product2{
+    display: inline-block;
+}
+.remove{
+    background-color: rgb(196, 84, 84);
+    border-radius: 2px;
+    border: none;
+    color: white;
+    padding: 2px;
+}
+.img-1{
+    height: ;
+    width: ;
+}

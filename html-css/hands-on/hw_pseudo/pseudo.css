@@ -1,0 +1,44 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
+
+body{
+    font-family: 'Roboto Flex', sans-serif;}
+
+.navbar{
+    width: 150px;
+    background-color: lightgrey;
+}
+.list{
+    list-style-position: inside;
+    padding: 0;
+} 
+.list1{
+    background-color: rgb(49, 47, 47);
+    color: white;
+    text-align: center;
+    list-style-type: none;
+}
+.list2, .list3, .list4{
+    list-style-type: none;
+}
+.list2::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: black;
+    content: '\3a''\3a';
+}
+.list3::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: black;
+    content: '\3a''\3a';
+}
+.list4::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: black;
+    content: '\3a''\3a';
+}
+nav.navbar ul li:hover a{
+    color: yellow;  
+}
