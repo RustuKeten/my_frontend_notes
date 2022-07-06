@@ -11,6 +11,7 @@ const theme = {
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
+    <GlobalStyles/>
       <Header />
     </ThemeProvider>
   );

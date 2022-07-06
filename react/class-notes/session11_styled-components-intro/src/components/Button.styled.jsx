@@ -20,4 +20,10 @@ export const TomatoButton = styled(Button)`
   border: 2px solid tomato;
 `;
 
+export const RustuButton = styled(Button)`
+  color: ${({ primary }) => (primary ? "blue" : "yellow")};
+  background-color: ${({ primary }) => (primary ? "yellow" : "blue")};
+  border: 2px solid black;
+`;
+
 export default Button;
