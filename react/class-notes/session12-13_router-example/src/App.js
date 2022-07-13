@@ -5,6 +5,27 @@ import Home from "./pages/Home";
 import Instructors from "./pages/Instructors";
 import NotFound from "./pages/NotFound";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import InstructorDetail from "./pages/InstructorDetail";
+import Paths from "./pages/Paths";
+import Aws from "./pages/Aws";
+import FullStack from "./pages/FullStack";
+import PrivateRoute from "./pages/PrivateRoute";
+// import {Navigate} from "react-router-dom"
+
+//* İc ice sayfalari gsotermek icin Nested Route kullanilabilir.
+
+//? Link, NavLink ve Navigate componentleri declerative routing
+//? gerceklestirmek icin kullanilir.
+//? Ornegin: Link ve NavLink Sayfada gorulebilen, kullanciyla
+//? bir etkilesim icerisinde bulunarak yonledirme yapılan bir
+//? componentlerdir. (Nav v.b)
+
+//? Navigate sayfada gorulmeyen ve programsal olarak bir linkin
+//? bir baska linke yonledirmesi icin kullanilir. (v5 -> Redirect)
+
+//* useNavigate() ise imperative routing icin elverislidir.
+//* Ornegin bir fonksiyon,event veye UseEffect icerisinde programsal
+//* olarak yonledirme yapmak icin kullanilabilir.
 
 function App() {
   return (
@@ -13,9 +34,19 @@ function App() {
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/instructors" element={<Instructors />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="instructors" element={<Instructors />} />
+          <Route path="instructors/:id" element={<InstructorDetail />} />
+          {/* Nested Route */}
+          <Route path="paths" element={<Paths />}>
+            <Route path="Aws" element={<Aws />} />
+            <Route path="FullStack" element={<FullStack />} />
+            <Route index element={<FullStack />} />
+          </Route>
+          <Route path="paths" element={<PrivateRoute />}>
+            <Route path="contact" element={<Contact />} />
+          </Route>
           <Route path="*" element={<NotFound />} />
+          {/* <Route path="/deneme" element={<Navigate to="/" />} /> */}
         </Routes>
         <Footer />
       </BrowserRouter>
