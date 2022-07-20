@@ -1,6 +1,8 @@
+import { Button, Input } from "@mui/material";
 import { useState, useEffect } from "react";
 import React from "react";
 import axios from "axios";
+import MovieCard from "../components/MovieCard";
 
 const Main = () => {
   const [movieData, setMovieData] = useState([]);
@@ -22,10 +24,24 @@ const Main = () => {
   }, []);
 
   return (
-    <div className="main">
-      <button type="submit" onClick={() => getData()}>
-        Submit
-      </button>
+    <div className="container">
+      <div className="row">
+        <div className="main d-flex justify-content-center mt-1 ">
+          <Input
+            className="border border-3"
+            id="search"
+            placeholder="search a movie"
+          />
+          <Button className="" variant="contained">
+            Search
+          </Button>
+        </div>
+        <div className="d-flex flex-wrap gap-2 justify-content-center">
+          {movieData?.map((movie, index) => {
+            return <MovieCard {...movie} key={index} />;
+          })}
+        </div>
+      </div>
     </div>
   );
 };
